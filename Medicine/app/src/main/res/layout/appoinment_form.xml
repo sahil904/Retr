@@ -1,0 +1,133 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/succes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="56dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/after_appointmeny"
+            android:id="@+id/success_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+    <TextView
+        android:layout_below="@+id/success_image"
+        android:id="@+id/success_tv"
+        android:textColor="@color/fab_color_1"
+        android:fontFamily="@font/asar"
+        android:textSize="20sp"
+        android:text="Successfully Submitted!!!"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/appointment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/book_layout"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/reception_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/form"/>
+        <RelativeLayout
+            android:layout_below="@+id/form"
+            android:id="@+id/name_layout"
+           android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:padding="5dp"
+                android:hint="Enter Your Name"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/name_et"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name_layout"
+            android:id="@+id/mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:padding="5dp"
+                android:inputType="number"
+                android:hint="Enter Your Mobile Number"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/mobile_et"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mobile_layout"
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:padding="5dp"
+                android:hint="Enter Your  Address"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/address_et"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="63dp"
+                android:layout_below="@+id/book_layout"
+                android:id="@+id/submit_detail_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/upload_btn"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:background="@color/fab_color_1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>
+</ScrollView>

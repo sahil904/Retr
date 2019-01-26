@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medhealth.ItemDetailsActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_id"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <RelativeLayout
+            android:id="@+id/main_static_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/thumbnail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp">
+                    <ImageView
+                        android:id="@+id/service_searched_pro_title_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/loading" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/detail_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thumbnail"
+                    android:layout_marginLeft="12dp">
+
+
+                    <TextView
+                        android:id="@+id/service_searched_pro_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/adamina"
+                        android:text="Product Title"
+                        android:textColor="#040404"
+                        android:textSize="15dip" />
+
+                    <RelativeLayout
+                        android:id="@+id/price_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/proTitle"
+                        android:layout_below="@+id/service_searched_pro_title"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/service_textCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Service Charge"
+                            android:fontFamily="@font/adamina"
+                            android:textColor="#040404" />
+
+                        <TextView
+                            android:id="@+id/service_textDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:text="50"
+                            android:fontFamily="@font/adamina"
+                            android:layout_toRightOf="@id/service_textCurrency"
+                            android:textColor="#040404" />
+
+                        <TextView
+                            android:id="@+id/service_text_discount_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visiting Charge"
+                            android:fontFamily="@font/adamina"
+                            android:layout_below="@id/service_textCurrency"
+                            android:textColor="#040404" />
+
+                        <TextView
+                            android:id="@+id/service_visiting_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:fontFamily="@font/adamina"
+                            android:layout_marginLeft="12dp"
+                            android:layout_below="@id/service_textCurrency"
+                            android:layout_toRightOf="@id/service_text_discount_symbol"
+                            android:textColor="#040404" />
+
+
+                        <TextView
+                            android:id="@+id/txtunit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/Rs"
+                            android:layout_toRightOf="@+id/service_textCurrency"
+                            android:textColor="#040404"
+                          />
+
+                        <TextView
+                            android:id="@+id/txtgm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#040404"
+                            android:layout_below="@id/service_textCurrency"
+                            android:layout_toRightOf="@+id/service_text_discount_symbol"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dialog_layout"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/custom_dialog_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/rounded_rectangle">
+
+                        <TextView
+                            android:id="@+id/rs_symbol_dialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/Rs" />
+
+                        <TextView
+                            android:id="@+id/price_text_dialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/rs_symbol_dialog"
+                            android:text="20.00"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="2dp"
+                            android:src="@drawable/downword_icon" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/service_add_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/detail_layout"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/add_bg_whole"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="15dp"
+                        android:text="Booknow"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/main"
+                android:background="@color/orange_color" />
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:id="@+id/description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/des_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/service_desc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/des_title"
+                    android:fontFamily="@font/amiri"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

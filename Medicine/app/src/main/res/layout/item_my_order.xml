@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="110dp"
+    android:padding="5dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/proimage"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/loading" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_again_layout"
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:background="#FFF"
+        android:layout_height="100dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/arrow_layout"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true">
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#a6a1a1"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icons_side_menu_11"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/arrow_layout"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/status_bar_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pro_title"
+        android:layout_toLeftOf="@id/order_again_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="5dip"
+        android:layout_marginTop="8dp"
+        android:text="Product Title"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:fontFamily="@font/adamina" />
+
+
+    <TextView
+        android:id="@+id/pro_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pro_title"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="5dip"
+        android:text="Product Date"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:fontFamily="@font/adamina" />
+
+
+    <TextView
+        android:id="@+id/order_status"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xml_green_button"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#a6a1a1"/>
+
+</RelativeLayout>

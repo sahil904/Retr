@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#410f9072"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity" >
+
+  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/logo"
+        android:layout_marginTop="5dp"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:src="@drawable/logo_med"
+        android:layout_centerInParent="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#bfbfbf"/>
+
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editFname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1" />
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/text_hint_phone"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:focusable="false"
+                />
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/editAddress"
+                android:background="@drawable/borderless_react"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/text_hint_address"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Landmark"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editZipcode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/text_hint_zipcode"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/text_hint_email"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/btnsave"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_react"
+                android:text="@string/btn_continue"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

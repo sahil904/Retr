@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Wisdom Clinic</string>
+    <string name="hello_world">Hello world</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">Wisdom Clinic</string>
+    <string name="title_activity_login">Login</string>
+    <string name="text_welcome_login">Welcom Login</string>
+    <string name="text_hint_email">Email</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_btn_login">Login Now</string>
+    <string name="text_btn_register">Register Now</string>
+    <string name="title_activity_register">Register</string>
+    <string name="text_register_us">Register With Us</string>
+    <string name="text_hint_fname">Full Name</string>
+    <string name="text_hint_phone">Phone</string>
+    <string name="text_hint_address">Address</string>
+    <string name="text_hint_state">State</string>
+    <string name="text_hint_country">Country</string>
+    <string name="text_hint_city">City</string>
+    <string name="text_hint_zipcode">Zipcode</string>
+    <string name="text_hint_username">Username</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_profile_update">Profile Update</string>
+    <string name="txt_order_details">Your Order Detail</string>
+    <string name="txt_shop_by_category">Shop By Category</string>
+    <string name="btn_place_order">Place Order</string>
+    <string name="btn_checkout">Checkout</string>
+    <string name="btn_buynow">Buy Now</string>
+    <string name="txt_product">Product</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_qty">Qty</string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_cas_delivery">Cash on delivery</string>
+    <string name="txt_paypal">Paypal</string>
+    <string name="txt_total_amount">Total Amount</string>
+    <string name="txt_total_item">Total Items</string>
+    <string name="txt_total_qty">Total Qty</string>
+    <string name="text_btn_request_password">Request Password</string>
+    <string name="btn_forgot_password_need">Need Password ?</string>
+    <string name="title_activity_choose_service">Choose Service</string>
+    <string name="title_activity_choose_time">Choose Time</string>
+    <string name="title_activity_chooe_address">Choose Address</string>
+    <string name="title_activity_choose_photo">Description</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_choose_city">ChooseCity</string>
+    <string name="title_activity_products">Products</string>
+    <string name="title_activity_viewcart">View Cart</string>
+    <string name="title_activity_product_detail">Product Detail</string>
+    <string name="title_activity_productdetail">Product Detail</string>
+    <string name="title_activity_checkout">Pick an address</string>
+    <string name="title_activity_placeorder">Place Order</string>
+    <string name="title_activity_order_detail">Order Detail</string>
+    <string name="title_activity_order_complete">Thanks Order Complete</string>
+    <string name="satisfaction_send">SEND</string>
+    <string name="satisfaction_user">User Name*</string>
+    <string name="satisfaction_Email">Email*</string>
+    <string name="satisfaction_comment">Comment*</string>
+    <string name="contactus_Phonenumber">Phone Number</string>
+    <string name="contactus_Email">Email</string>
+    <string name="Contactus_Website">Website</string>
+    <string name="loading">Loading. Please Wait..</string>
+    <string name="viewcartadapter_product_removed">Product Removed</string>
+    <string name="internetconnection">Please connect mobile with working Internet</string>
+    <string name="forgotactivity_mobile_no">Enter Mobile No</string>
+    <string name="forgotactivity_enter_password">Enter Password</string>
+    <string name="mainactivity_logout_sucessfull">Logout Sucessfull</string>
+    <string name="mainactivity_mainactivity_are_exit">Are you sure you want to exit?</string>
+    <string name="mainactivity_this_device">This device is not supported.</string>
+    <string name="orderdetailactivity_order_cancle">Order Cancle Succesfull</string>
+    <string name="placeorderactivity_max_purchase_order">Max Purchase Order</string>
+    <string name="placeorderactivity_delivery_charge">Delivery Charge :</string>
+    <string name="placeorderactivity_total_price"> Total Price : </string>
+    <string name="placeorderactivity_total_item">Total Items :</string>
+    <string name="placeorderactivity_error_parsing_data">Error parsing data</string>
+    <string name="placeorderactivity_order_placed_succesfull">Order Placed Succesfull</string>
+    <string name="placeorderactivity_product_added_to_cart">Product Added to Cart</string>
+    <string name="productsActivity">selected_product</string>
+    <string name="signupactivity_mobile_no">Enter Mobile No</string>
+    <string name="signupactivity_enter_password">Enter Password</string>
+    <string name="signupactivity_your_registration">Your registration is successful.</string>
+    <string name="viewcartactivity_min_purchase_order">Min Purchase Order</string>
+    <string name="viewcartactivity_please_order_minimum_of_amount">Please order Minimum of amount </string>
+    <string name="viewcartactivity_max_purchase_order">Max Purchase Order</string>
+    <string name="viewcartactivity_delivery_charge">Delivery Charge</string>
+    <string name="viewcartactivity_total_price"> Total Price : </string>
+    <string name="viewcartactivity_product_qty">Product Qty</string>
+    <string name="viewcartactivity_qty">Qty</string>
+    <string name="viewcartactivity_save">Save</string>
+    <string name="viewcartactivity_cancel">Cancel</string>
+    <string name="viewcartactivity_all_product_removed">All Product Removed...</string>
+    <string name="myprofilefragment_your_profile_update_Succesfull">Your Profile Update Succesfull</string>
+    <string name="password_not_matched">Password Not Matched</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rs">\u20B9</string>
+    <string name="earn">Earn \u20B9 10 and invite friends the will get \u20B9 50 when they sign up to Fresh Vegi</string>
+    <string name="otp_text">We will send an SMS with a confirmation code to this number</string>
+    <string name="faq">At Wisdom Clinic, we are dedicated to providing a seamless shopping experience to all our customers. To help guide you through your online shopping with us, we have compiled a list of frequently asked questions and provided answers below. If you don’t find your question, you are always welcome to contact us and we will get back to you as soon as possible.
+</string>
+    <string name="question1">Question: Can I know whether your Pharmacy is licensed?
+</string>
+    <string name="answer1">Answer: Certainly, we are a licensed pharmacy offering prescription medications online. Our license number: 00014/20/21/GZB-2015
+</string>
+    <string name="answer2">Answer: Our website/App is open 24 hours a day, 7 days a week. Call Centre support is available from Monday to Sunday, 08:00 am to 10:00 pm IST.
+</string>
+    <string name="answer3">Answer: At Wisdom Clinic, your privacy and security are extremely important to us. We are committed to protecting the confidentiality of your personal information (your name, address, email address or credit card information) and we never share them with any other person or company. It is used solely by our authorized  personnel to process your order. 
+</string>
+    <string name="answer4">Please note that all information provided to us is subject to doctor–patient privilege laws. Being compliant with PCI DSS Level 3, we use the latest electronic security measures and our servers are protected by secure firewalls to prevent unauthorized access to your personal data.
+</string>
+    <string name="question2">Question: What is Wisdom Clinic’s return and refund policy?
+</string>
+    <string name="answer5">Answer: At Wisdom Clinic, we do our best to ensure that you are completely satisfied with our products. And we are happy to issue a full refund based on the conditions listed below: 
+</string>
+    <string name="about_heading">Our Mission is to make healthcare understandable, accessible and affordable
+</string>
+    <string name="about1">We want you to understand the medicines that you take and that you give your loved ones.
+</string>
+    <string name="about2">Buying medicines may require you to try 5 medical stores which are miles apart. We want you to be able to do it with a click.
+</string>
+    <string name="about3">Medicines can be expensive. We want you to know about medicines which have the same composition as prescribed by your doctor but can be considerably cheaper.
+</string>
+    <string name="about4">Heavy traffic, lack of parking, monsoons, shop closed, forgetfulness… these are some of the reasons that could lead to skipping of vital medications. Since taking medicines regularly is a critical component of managing chronic medical conditions, it’s best not to run out of essential medicines. Just log on to Wisdom Clinic.co.in, Or Our App ,place your order online and have your medicines delivered to you – without leaving the comfort of your home.
+</string>
+    <string name="about5">What’s more, with easy access to reliable drug information, you get to know all about your medicine at netmeds.com, and once you’re a Wisdom Clinic customer, you’ll get regular refill reminders, so you’ll never again come up short of medicines.
+</string>
+    <string name="terms1">The following are the Terms and Conditions, read together with the Privacy Policy, that govern your purchase and use of the products and services (the "Products") from Wisdom Clinic, and constitute a legally binding agreement, between you ("the Customer", the "User" or "the Caregiver") and Wisdom Clinic a fully licensed Pharmacy. </string>
+    <string name="terms2">
+1.1 To use certain features of the Website (e.g., ordering Products, posting rating/reviews), you must set up an account with Wisdom Clinic ("Wisdom Clinic’s Account") and provide certain information about yourself as prompted by the Customer Information form, including, your name, gender, email address, account password, mobile phone number and billing/shipping address. All of your registration information is protected by our Privacy Policy.
+</string>
+    <string name="terms3">1.2 You represent and warrant that the information you submit during registration is truthful and accurate and that you will maintain the accuracy of such information.
+</string>
+    <string name="terms4">1.3 Your Wisdom Clinic  Account username and password are personal to you. You may not transfer your account and you will be responsible for the activities associated with your Wisdom Clinic Account.
+</string>
+    <string name="terms5">1.4 Wisdom Clinic will not be liable for any loss or damages as a result of your failure to maintain the confidentiality of your account credentials. If you suspect any unauthorized use of your Wisdom Clinic account, you shall immediately notify Wisdom Clinic team.
+</string>
+    <string name="terms6">1.5 It is your responsibility to keep your email address up-to-date on your account setup at Wisdom Clinic so that we can communicate with you electronically.
+</string>
+    <string name="terms2.1">2.2 We understand the privacy of all information you provide is of a primary importance. This is why we do everything possible to use it carefully and sensibly. This information is never shared with other companies or third party service providers.
+</string>
+    <string name="terms3.1">All your transactions are 100% secure when you place an order online at Wisdom Clinic. Your personal information is encrypted by using 256-bit Secure Sockets Layer (SSL) encryption technology before being sent over the Internet, which ensures the privacy and high level of security of all your information.
+</string>
+    <string name="terms4.1">
+Our Customers or Users must be over 18 years of age and registered with us. Wisdom Clinic is not intended for children under the age of 18.
+</string>
+    <string name="terms5.1">5.1 All our product prices include all applicable statutory taxes.
+</string>
+    <string name="terms5.2">5.2 We make every effort to make sure that the pricing and availability of Products on our Website is accurate and up to date. However, rarely, there may be an error on the pricing of a product or an error related to product availability. In such cases, we are not responsible for any typographical errors and we reserve the right to cancel the sale.
+</string>
+    <string name="terms5.3">5.3 We reserve the right to correct any inaccuracies or omissions related to pricing and product availability/descriptions, even after you have submitted your order, and to change or update any other information at any time without prior notice.
+</string>
+    <string name="terms5.4">5.4 The following are our delivery charges:\n
+           - Delivery charges for ALL orders: Rs. 25\n
+           - FREE Delivery on Medicine orders of Rs. 1000 or more. 
+</string>
+    <string name="terms5.5">5.5 Delivery times may vary depending on the delivery location as well as the type of product you order.
+</string>
+    <string name="terms5.6">5.6 You can make the payment via any one of the following methods of payment: Credit/Debit Card, Net Banking or Cash on Delivery.
+    </string>
+    <string name="terms5.7">5.7 Credit/Debit Card and Net Banking Payments are processed via our online payment service partners.
+</string>
+    <string name="terms6.1">6.1 Wisdom Clinic may accept or decline any order placed by a Customer in its absolute discretion without liability to you.
+</string>
+    <string name="terms6.2">6.2 Wisdom Clinic  reserves the right to discontinue any program or offer on its Website/App.
+</string>
+    <string name="terms6.3">6.3 We reserve the right, without prior notice, to limit the order quantity of any Products available on Wisdom Clinic.
+</string>
+    <string name="terms6.4">6.4 We acknowledge and you agree that you have fully and accurately disclosed your personal information and personal health information and consent to its use by the Pharmacy Wisdom Clinic and/or its affiliates. You confirm that you have had a physical examination by a physician and do not require a physical examination.
+</string>
+    <string name="terms7.0">
+"YOU HAVE READ AND UNDERSTAND THESE TERMS AND AGREE THAT THEY SHALL BE BINDING UPON YOU AND YOUR ASSIGNS, HEIRS AND PERSONAL REPRESENTATIVES."
+</string>
+    <string name="terms7.2">7.2 Wisdom Clinic will not dispense any prescription medication without a valid prescription from a licensed physician.
+</string>
+    <string name="terms7.3">7.3 If you are ordering prescription medication(s), you hereby confirm that you will send us a scanned copy of your valid prescription(s) via email, Whatsapp, and this prescription shall then be subject to the scrutiny of and approval by our qualified staff.
+</string>
+    <string name="terms7.4">7.4 The drug information provided in the Wisdom Clinic is for informative purposes only and this Website is not intended to provide diagnosis, treatment or medical advice. We are not liable for any adverse effects or harm to you as a result of your reliance on the information in the Website.
+</string>
+    <string name="terms7.5">7.5 Wisdom Clinic requires either the User or Customer or the Caregiver to confirm he/she is completely aware of the indications, side effects, drug interactions, effects of missed dose or overdose of the medicines he/she orders from us. It is imperative to seek professional advice from your physician before purchasing or consuming any medicine from Wisdom Clinic
+    </string>
+    <string name="terms7.6">7.6 At Wisdom Clinic, a Caregiver can order prescription medicines on your behalf
+    </string>
+    <string name="terms8.0">We do our best to ensure that the products you order are delivered according to your specifications. However, should you receive an incomplete order, damaged or incorrect product(s), please notify Wisdom Clinic Customer Support immediately or within 10 working days of receiving the products, to ensure prompt resolution. Please note that Wisdom Clinic will not accept liability for such delivery issues if you fail to notify us within 3 working days of receipt.
+</string>
+    <string name="terms8.1">
+We also understand that various circumstances may arise leading you to want to return a product or products that are not defective. In these cases, we may allow the return of unopened, unused products after deducting a 30% restocking charge, ONLY if you notify us within 10 working days of receipt.
+</string>
+    <string name="contact_detail">Please contact us for any questions or comments regarding these Terms and Conditions.\n
+Telephone number: +91-7291055996\n
+E-mail: Wisdom Clinicteam@gmail.com
+</string>
+    <string name="refund_if">you received a defective item; Contact within 48 hours of receiving the item\n
+the ordered item(s) is lost or damaged during transit;\n
+the ordered item(s) is past its expiry date.
+</string>
+    <string name="faq_1">Please Note: Mode of refund may vary depending on circumstances. If the mode of refund is by Credit/Debit Card or Net Banking, please allow 7 to 10 working days for the credit to appear in your account. While we regret any inconvenience caused by this time frame, it is the bank’s policy that delays the refund timing and we have no control over that. If the mode of refund is by e-wallet, credit should be available within 24 hours. \n \n
+And most Importantly, WITHOUT BILL NO TRANSACTION WILL BE INITIATED.
+</string>
+    <string name="faq_2">Question: Why is the image shown on the website different from the item I received?
+</string>
+    <string name="faq_ans_2">Answer: Although we make every effort to ensure product images on our website are identical to the item you receive, occasionally actual product color may vary from the image shown. We cannot guarantee the accurate representation of the product because not all computer monitors may have the same color settings. Please note that product image on our site is for illustrative purpose only.
+</string>
+    <string name="faq_ans_3">Answer: Yes. The medications that you purchase at our pharmacy are of the highest quality. The prescription medications we provide are procured from world-class and well-recognized pharmaceutical companies such as GlaxoSmithKline, Pfizer, Wyeth, Merck, Ranbaxy, Dr. Reddy’s, Nicholas Piramal, Sun Pharmacy and other global industry giants. They are manufactured under government supervision, prepackaged in factory-sealed blister packs and untouched by human hands. 
+</string>
+    <string name="faq_ans_4">Annswer: According to the trademark laws, generic pill is not allowed to look exactly like its brand-name version. So the pills (generic version) you received normally will look different from their branded counterparts, even though both contain the same active ingredient(s) and work in the same way exactly.
+    </string>
+    <string name="faq_ans_5">Answer: Generic Drugs, also known as Generics or Generic Medications, are drugs that are marketed without brand names and are considered identical as their brand-name counterparts in all respects such as strength, dose, active ingredients, intended use, route of administration, efficacy, bioavailability and safety. As required by the CDSCO, India’s regulatory body for pharmaceuticals, Generics must meet the same rigid standards as set for brand-name counterparts.
+</string>
+    <string name="faq_ans_6">Answer: Delivery times may vary depending on the delivery location as well as the type of product you order.
+</string>
+    <string name="faq_ans_7">Answer: - Delivery charges for ALL orders: Rs. 25\n\n
+
+              - FREE Delivery on Medicine orders of Rs. 1000 or more. 
+</string>
+    <string name="faq_ans_8">Answer: Cash on Delivery (COD) is a payment method by which you can pay for your ordered item(s) in cash when the courier company delivers the item(s) to you at your delivery address.
+</string>
+    <string name="faq_ans_9">Answer: If you wish to cancel your order, you can send an email request to “Wisdom Clinicteam@gmail.com; Please note that in case your order has already been charged or delivered, we cannot cancel it.
+</string>
+    <string name="faq_ans_10">Answer: No, you cannot cancel your order once your payment has been processed.
+</string>
+    <string name="faq_ans_11">Answer: Wisdom Clinic   takes greatest possible care in packaging your order.
+</string>
+
+    <string name="about6">At Wisdom Clinic , we not only provide you with a wide range of medicines listed under various categories, we also offer a wide choice of  OTC products including wellness products, vitamins, diet/fitness supplements, herbal products, pain relievers, diabetic care kits, baby/mother care products, beauty care products and surgical supplies
+    </string>
+    <string name="about7">Wisdom Clinic  believes to create a legacy of success in the pharmaceutical industry. We are committed to provide safe, reliable and affordable medicines as well as a customer service philosophy that is worthy of our valued customers’ loyalty. We offer a superior online shopping experience, which includes ease of navigation and absolute transactional security.
+</string>
+
+
+</resources>

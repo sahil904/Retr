@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/medicinelog" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/medicinelog"
+                    android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+             >
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="70dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+            <EditText
+                android:background="@drawable/borderless_react"
+                android:layout_gravity="center"
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/text_hint_phone"
+                android:inputType="phone"
+                android:lines="1"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:singleLine="true" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/buttonLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/text_btn_request_password"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_react" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

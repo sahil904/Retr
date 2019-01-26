@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#36208b7e"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp">
+
+
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thank_you_logo_s"
+            android:layout_gravity="center_horizontal"/>
+-->
+        <TextView
+            android:padding="12dp"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order Has Been Successfully Placed...."
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TRACK ORDER"
+            android:id="@+id/button"
+            android:background="@color/fab_color_1"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE PROFILE"
+            android:id="@+id/button2"
+            android:background="#f98282"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE SHOPPING"
+            android:id="@+id/button3"
+            android:background="#2fc2e3"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

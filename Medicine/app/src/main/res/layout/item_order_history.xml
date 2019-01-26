@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardMaxElevation="2dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+            <RelativeLayout
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:id="@+id/scheduled_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:id="@+id/scheduled_for_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/average"
+                    android:text="Scheduled For "
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/scheduled_for_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/scheduled_for_label"
+                    android:fontFamily="@font/average"
+                    android:text="Sat,10-02-18,Morning"
+                    android:textColor="@color/fab_color_1" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Delivered"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/scheduled_time_layout"
+                android:textSize="16sp"
+                android:fontFamily="@font/adamina"
+                android:visibility="gone"
+                android:textColor="@color/orange_color"/>
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:layout_below="@+id/status_tv"
+                    android:id="@+id/detail_layoput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/deliver_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/average"
+                            android:text="Delivered By MedHealth"
+                            android:textSize="15sp" />
+                    <RelativeLayout
+                        android:id="@+id/reschedule_layout"
+                       android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/orange_box">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/average"
+                            android:text="Repeat Order"
+                            android:textColor="@color/fab_color_1" />
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/thumbnail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="5dip"
+                            android:padding="3dip" >
+                            <android.support.v7.widget.CardView
+                                app:cardElevation="4dp"
+                                app:cardUseCompatPadding="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/proimage"
+                                android:layout_width="80dip"
+                                android:layout_height="80dip"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/loading" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:id="@+id/pro_title_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/thumbnail"
+                            android:layout_marginTop="8dp">
+                            <TextView
+                                android:id="@+id/price_sign"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:text="@string/Rs"
+                                android:layout_marginRight="2dp"
+                                android:layout_toLeftOf="@+id/pro_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/pro_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/average"
+                                android:paddingBottom="5dip"
+                                android:text="234"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                            <RelativeLayout
+                                android:layout_marginRight="12dp"
+                                android:paddingBottom="5dip"
+                                android:layout_toLeftOf="@+id/price_sign"
+                                android:id="@+id/name_layout"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/pro_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:fontFamily="@font/average"
+                                    android:text="Product Title"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/delivery_charge_layout"
+                            android:layout_below="@id/pro_title_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/thumbnail">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:text="@string/Rs"
+                                android:layout_toLeftOf="@+id/pro_delivery_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/pro_delivery_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/assistant"
+                                android:paddingBottom="5dip"
+                                android:text="234"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/delivery_charge_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/order_again_layout"
+                                android:fontFamily="@font/average"
+                                android:paddingBottom="5dip"
+                                android:text="Delivery Charges"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/order_id_layout"
+                            android:layout_below="@id/delivery_charge_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/thumbnail">
+
+                            <TextView
+                                android:id="@+id/order_id_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/average"
+                                android:paddingBottom="5dip"
+                                android:text="Order ID:"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/receipt_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/order_id_label"
+                                android:fontFamily="@font/average"
+                                android:paddingBottom="5dip"
+                                android:text="12344332323"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/amount_layout"
+                android:layout_below="@id/detail_layoput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:id="@+id/pay_able_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/average"
+                    android:text="Total Paid Amount"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/Rs"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@+id/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/average"
+                    android:text="250"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="29dp"
+                android:id="@+id/view_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="29dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/amount_layout"
+                android:background="@color/fab_color_1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/average"
+                    android:text="View Details"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

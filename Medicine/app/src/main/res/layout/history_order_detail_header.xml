@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/schedule_delivery_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/delivery_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scheduled Delivery For"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/adamina"
+                            />
+                        <TextView
+                            android:id="@+id/delivery_date_time"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_below="@id/delivery_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scheduled Delivery"
+                            android:textSize="13sp"
+                            android:textColor="@color/fab_color_1"
+                            android:fontFamily="@font/adamina"
+                            />
+                        <View
+                            android:layout_below="@id/delivery_date_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#eaeaea"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/reschedule_layout"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/orange_box">
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/fab_color_1"
+                            android:fontFamily="@font/adamina"
+                            android:text=" Reschedule"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_below="@+id/reschedule_layout"
+                        android:id="@+id/status_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/status_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order Delivered"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/adamina"
+                            android:textColor="@color/fab_color_1"/>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/cod_payable_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@id/status_layout">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:id="@+id/pay_label"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay On Delivery"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/adamina"
+                            />
+                        <TextView
+                            android:id="@+id/pay_lable_desc"
+                            android:layout_below="@id/pay_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You Have to Pay "
+                            android:textSize="14sp"
+                            android:fontFamily="@font/adamina"
+                            />
+                        <TextView
+                            android:textSize="14sp"
+                            android:textColor="@color/fab_color_1"
+                            android:text="@string/Rs"
+                            android:layout_below="@+id/pay_label"
+                            android:layout_toRightOf="@+id/pay_lable_desc"
+                            android:id="@+id/rs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:id="@+id/price_text"
+                            android:layout_toRightOf="@id/rs"
+                            android:layout_below="@id/pay_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="250"
+                            android:textSize="14sp"
+                            android:textColor="@color/fab_color_1"
+                            android:fontFamily="@font/adamina"
+                            />
+                        <TextView
+                            android:id="@+id/pay_lable_desc_end"
+                            android:layout_toRightOf="@id/price_text"
+                            android:layout_below="@id/pay_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" on Delivery"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/adamina"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/cod_payable_layout"
+                        android:id="@+id/save_amt_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/dis_txt_msg"
+                            android:fontFamily="@font/adamina"
+                            android:text="You Saved  "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="14sp"
+                            android:fontFamily="@font/adamina"
+                            android:id="@+id/rs_dis_syb"
+                            android:layout_marginLeft="1dp"
+                            android:text="@string/Rs"
+                            android:textColor="@color/fab_color_1"
+                            android:layout_toRightOf="@+id/dis_txt_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:fontFamily="@font/adamina"
+                            android:textSize="14sp"
+                            android:text="50"
+                            android:id="@+id/pro_save_tv"
+                            android:textColor="@color/fab_color_1"
+                            android:layout_toRightOf="@+id/rs_dis_syb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/repeat_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/save_amt_layout"
+                        android:background="@color/fab_color_1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/adamina"
+                            android:text="Repeat Order"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cancle_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_below="@id/repeat_layout"
+                        android:background="@color/fab_color_1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/adamina"
+                            android:text="Cancel Order"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/grey_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/cancle_order"
+                        android:background="#EAEAEA">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#706e6e"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

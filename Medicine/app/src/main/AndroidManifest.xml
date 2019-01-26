@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medi">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.fruitmarket.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.medhealth.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.medhealth.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- Branch io Coding Started -->
+
+        <activity
+            android:name="com.medhealth.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.medhealth.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.medhealth.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.medhealth.NewViewCartActivity"
+            android:label="@string/title_activity_viewcart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.ChooseCityActivity"
+            android:label="@string/title_activity_choose_city"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.ViewcartActivity"
+            android:label="@string/title_activity_viewcart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.ProductdetailActivity"
+            android:label="@string/title_activity_productdetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.medhealth.ServiceCheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.medhealth.NewPlaceOrderActivity"
+            android:label="@string/title_activity_placeorder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.medhealth.ServiceNewPlaceOrderActivity"
+            android:label="@string/title_activity_placeorder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.medhealth.ForgotActivity"
+            android:label="Forgot password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.medhealth.NewOrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.CompleteOrderActivity"
+            android:label="@string/title_activity_order_complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.RescheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.NewLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.medhealth.AppointmentForm"
+            android:screenOrientation="portrait" />
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="gcm.play.android.samples.com.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="gcm.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="gcm.RegistrationIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.medhealth.NewProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.NewSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.SearchedProductDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.StatusActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="util.MedicalAppBroadCastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.medhealth.ItemDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.ServiceItemDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.ChooseImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medhealth.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.medhealth.BeforeLoginActivity" />
+        <activity android:name="com.medhealth.NewServiceActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/medi">
+   <!-- <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/servpapa_logo"
+        android:layout_marginTop="110dp" />-->
+
+    </RelativeLayout>
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp" >
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+             <EditText
+                 android:padding="5dp"
+                 android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="@string/text_hint_phone"
+                android:inputType="phone"
+                android:lines="1"
+                 android:background="@drawable/borderless_react"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:drawablePadding="5dp"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+            <EditText
+                android:padding="5dp"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="@string/text_hint_password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="13dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+                <EditText
+                    android:padding="5dp"
+                    android:background="@drawable/borderless_react"
+                    android:id="@+id/editCnfrmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:drawablePadding="5dp"/>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:textSize="17sp"
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/text_btn_register"
+                android:background="@drawable/rounded_react"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

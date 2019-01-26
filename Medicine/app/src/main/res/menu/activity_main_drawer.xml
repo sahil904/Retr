@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/walleticon"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/order_histeory"
+            android:icon="@drawable/order_history"
+            android:title="Order History" />
+        <item
+            android:id="@+id/refer_earn"
+            android:icon="@drawable/earn"
+            android:title="Earn and Refer" />
+
+    </group>
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/contact_us"
+                android:title="Contact Us" />
+            <item
+                android:icon="@drawable/terms_condition"
+                android:id="@+id/terms"
+                android:title="Terms and Conditions" />
+</menu>

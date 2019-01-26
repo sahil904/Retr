@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/listlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerlayout"
+        android:layout_alignParentTop="true" >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cart_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/footerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="#24af20"
+        android:id="@+id/strips"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/strip_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/strip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiri"
+            android:text="Shop For More Than Rs. 500 For Free Delivery"
+            android:textColor="#000" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/fab_color_1"
+        android:layout_below="@+id/strips"
+        android:id="@+id/footer_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/qty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:id="@+id/charge"
+            android:text="Total Price : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/charge"
+                android:text="@string/Rs"
+                android:id="@+id/price_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="55dp"
+            android:textColor="#fff"
+            android:text="0"
+            android:id="@+id/textTotalPrice"
+            android:layout_toRightOf="@+id/charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/price_layout"
+            android:layout_below="@+id/qty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:id="@+id/total_price"
+                android:text="Delivery Charge : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/total_price"
+                android:text="@string/Rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                android:text="0"
+                android:id="@+id/delivery_charge"
+                android:layout_toRightOf="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/delivery_layout"
+            android:layout_below="@+id/price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/grand_total_sample"
+                android:textColor="#fff"
+                android:text="Grand Total : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/grand_total_sample"
+                android:text="@string/Rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:id="@+id/grand_total"
+                android:layout_toRightOf="@+id/grand_total_sample"
+                android:textColor="#fff"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/checkout_layout"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:id="@+id/chck"
+                android:text="Checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="6dp"
+                android:src="@drawable/forword"
+                android:layout_toRightOf="@+id/chck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/empty_cart_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            app:cardElevation="2dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/empty_cart_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/empty_cart_icon"/>
+
+                    <TextView
+                        android:layout_below="@id/empty_cart_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Cart Is Empty"
+                        android:fontFamily="@font/adamina"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/no_internet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:src="@drawable/no_intr_connection"
+                android:id="@+id/no_intr_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/no_intr_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Internet"
+                android:textSize="22sp"
+                android:textColor="#000000"/>
+        </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medhealth.NewServiceActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/service_tool"
+        android:background="@color/fab_color_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/search_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="services"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@+id/service_tool"
+        android:id="@+id/tab_layout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/footer_layout"
+        android:layout_below="@+id/tab_layout_layout"
+        android:id="@+id/service_recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/footer_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#fde0a4"
+            android:visibility="gone"
+            android:id="@+id/service_strip_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/strip_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/service_strip_tv"
+                    android:textColor="#000"
+                    android:fontFamily="@font/amiri"
+                    android:text="Shop For More Than Rs. 500 For Free Delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

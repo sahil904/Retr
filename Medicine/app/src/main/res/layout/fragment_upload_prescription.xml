@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    tools:context="fragments.UploadPrescriptionFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/book_layout"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:padding="3dp"
+                android:inputType="text"
+                android:hint="Enter Your Name"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/name_et"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/name_layout"
+            android:id="@+id/mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <android.support.v7.widget.CardView
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                android:padding="3dp"
+                android:inputType="number"
+                android:hint="Enter Your Mobile Number"
+                android:background="@drawable/borderless_react"
+                android:id="@+id/mobile_et"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/mobile_layout"
+            android:id="@+id/choose_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:id="@+id/choose_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Upload Prescription Image"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_yellow_button" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/not_presc_layout"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/choose_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:id="@+id/txt_or"
+                android:layout_centerHorizontal="true"
+                android:text="OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/fab_color_1"
+                android:layout_below="@+id/txt_or"
+                android:id="@+id/prec_layout"
+                android:layout_marginTop="8dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:text="If you don't have a Prescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/prec_layout"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:hint="Please type your medical problems/medicine"
+                    android:background="@drawable/borderless_react"
+                    android:id="@+id/precs_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/not_presc_layout"
+            android:id="@+id/submit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="Submit Now"
+                android:id="@+id/submit_btn"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/xml_yellow_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="extra_light_gray">#f2f2f2</color>
+    <color name="fab_color_1">#0F9072</color>
+    <color name="fab_color_1_muted">#ff8080</color>
+    <color name="fab_color_2">#0F9072</color>
+    <color name="fab_color_2_muted">#0F9072</color>
+    <color name="navigationbar">#0F9072</color>
+    <color name="status_bar_color">#0F9072</color>
+    <color name="orange_color">#0F9072</color>
+    <color name="snackbar_bg">#ff8080</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow_color">#b47373</color>
+
+    <!--
+    <color name="fab_color_1">#ff5252</color>
+    <color name="fab_color_1_muted">#ff8080</color>
+    <color name="fab_color_2">#FF8437</color>
+    <color name="fab_color_2_muted">#a56ab0</color>
+    <color name="navigationbar">#FFA803</color>
+    <color name="status_bar_color">#FF8437</color>
+    -->
+</resources>

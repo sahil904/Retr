@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "27182075881",
+    "project_id": "alert-diode-116009"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27182075881:android:0a6db0901c192cc8",
+        "android_client_info": {
+          "package_name": "com.medi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRG4BamlEBet2iJe1jouer3DlHrro8UtQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

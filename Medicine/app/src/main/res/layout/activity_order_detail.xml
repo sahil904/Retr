@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:id="@+id/linearlayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#f36f2a">
+
+          <TextView
+              android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="0.6"
+              android:text="@string/txt_product"
+              android:paddingLeft="10dp"
+              android:textStyle="bold"
+              android:textColor="#ffffff" />
+
+            <TextView
+                 android:layout_width="50dip"
+                 android:layout_height="wrap_content"
+                
+                 android:text="@string/txt_price"
+                  android:layout_gravity="center"
+                   android:textStyle="bold"
+                 android:textColor="#ffffff"
+                 />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="50dip"
+             
+                android:text="@string/txt_qty"
+                 android:textStyle="bold"
+                android:layout_gravity="center"
+                 android:textColor="#ffffff"
+                 />
+            
+           
+
+            
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="80dip"
+              
+                android:text="@string/txt_amount"
+                 android:textStyle="bold"
+                 android:layout_gravity="center"
+                 android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+            
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerLayout"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+    <Button
+
+        android:textColor="#ffffff"
+        android:id="@+id/btnorderAgain"
+        android:text="Order Again"
+        android:background="@drawable/xml_yellow_button"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="30dp" />
+
+    <Button
+
+        android:textColor="#ffffff"
+        android:id="@+id/btnOrderUpdate"
+        android:text="Update Order"
+        android:background="@drawable/xml_yellow_button"
+        android:layout_marginBottom="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp"
+                android:text="Total" />
+            <TextView
+                android:id="@+id/textDeliveryCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="8dp"
+                android:text="Total" />
+
+        </LinearLayout>
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="#cf0e00"
+            android:id="@+id/buttonCancle"
+
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+
+            android:text="Cancle Order" />
+    </LinearLayout>
+      
+</RelativeLayout>
+
+</LinearLayout>

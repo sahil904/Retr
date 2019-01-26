@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/relativeLayout_service"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dip">
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:id="@+id/service_image"
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_height="120dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/loading" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:id="@+id/service_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDiscountFlag"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Product Title"
+        android:textColor="#040404"
+        android:fontFamily="@font/amiri" />
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dip"
+        android:text="Stock"
+        android:visibility="gone"
+        android:textColor="#040404"
+        android:textSize="12dip"
+        android:typeface="sans" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/btnBuy"
+        android:background="#FF8437"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:layout_width="60dp"
+        android:layout_height="30dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:textSize="11dp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/service_title"
+        android:layout_below="@+id/service_title" >
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/textCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service charge"
+            android:fontFamily="@font/amiri"
+            android:textColor="#040404"  />
+        <TextView
+            android:textColor="#040404"
+            android:textSize="16sp"
+            android:id="@+id/service_pric_symbol"
+            android:text="@string/Rs"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/textCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/service_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textCurrency"
+            android:text="TextView"
+            android:fontFamily="@font/adamina"
+            android:textColor="#040404" />
+        <TextView
+            android:layout_below="@id/textCurrency"
+            android:textSize="16sp"
+            android:id="@+id/dis_pric_symbol"
+            android:textColor="#040404"
+            android:text="Visiting charge"
+            android:fontFamily="@font/amiri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/visiting_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsfdg"
+            android:layout_toRightOf="@id/dis_pric_symbol"
+            android:layout_below="@id/textCurrency"
+            android:textColor="#040404"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="13dp" />
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/visiting_pric_symbol"
+            android:text="@string/Rs"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/textCurrency"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/textCurrency"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cart_price_layout"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_rectangle"
+            android:id="@+id/custom_dialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/rs_symbol_dialog"
+                android:text="@string/Rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_toRightOf="@+id/rs_symbol_dialog"
+                android:textSize="14sp"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/price_text_dialog"
+                android:text="20.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/downword_icon"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/incr_decr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="1dp"
+            android:background="#fa561f"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/incr_decr_layout"
+        android:layout_below="@id/price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/booknow_service"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="booknow"
+            android:textSize="15sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:textColor="@color/white"
+            android:background="@drawable/fab_background"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/quantity_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentRight="true"
+        >
+        <RelativeLayout
+            android:id="@+id/decrese"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+             >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/decrement_icon"
+                android:background="@drawable/add_bg"
+                android:scaleType="fitXY"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/value1"
+            android:layout_toRightOf="@id/decrese"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:text="0" />
+        <RelativeLayout
+            android:id="@+id/increse"
+            android:layout_toRightOf="@id/value1"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_white_24dp"
+                android:background="@drawable/add_bg"
+                android:scaleType="fitXY"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
