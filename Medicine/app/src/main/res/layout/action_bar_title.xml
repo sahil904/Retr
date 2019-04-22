@@ -8,6 +8,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:text=""
+        android:fontFamily="@font/theantiquasun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>

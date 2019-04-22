@@ -27,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00"
+        android:fontFamily="@font/theantiquasun"
         android:layout_marginTop="8dp"
         android:layout_alignTop="@+id/thumbnail"
         android:layout_toRightOf="@+id/thumbnail"
@@ -42,7 +43,7 @@
         android:layout_toRightOf="@+id/thumbnail"
         android:text="Product Title"
         android:textColor="#040404"
-        android:fontFamily="@font/amiri" />
+        android:fontFamily="@font/theantiquasun" />
     <TextView
         android:id="@+id/stock"
         android:layout_width="wrap_content"
@@ -50,6 +51,7 @@
         android:layout_alignParentRight="true"
         android:paddingBottom="10dip"
         android:text="Stock"
+        android:fontFamily="@font/theantiquasun"
         android:visibility="gone"
         android:textColor="#040404"
         android:textSize="12dip"
@@ -66,6 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buy Now"
+            android:fontFamily="@font/theantiquasun"
             android:textSize="11dp"
             android:layout_centerInParent="true"
             android:textColor="#FFFFFF"/>
@@ -84,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Rs"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#040404"  />
 
         <TextView
@@ -92,6 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#040404" />
         <TextView
             android:textSize="16sp"
@@ -107,6 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="dsfdg"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#040404"
             android:layout_marginLeft="0dp" />
         <TextView
@@ -116,6 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
             android:text="TextView"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#040404" />
         <TextView
             android:visibility="gone"
@@ -123,6 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="gm/qty"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#040404" />
     </LinearLayout>
     <RelativeLayout
@@ -143,18 +151,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rs. "
+                android:fontFamily="@font/theantiquasun"
                 android:textColor="#040404"  />
             <TextView
                 android:id="@+id/cart_txtprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:fontFamily="@font/theantiquasun"
                 android:textColor="#040404" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
                 android:text="/"
+                android:fontFamily="@font/theantiquasun"
                 android:textColor="#040404" />
             <TextView
                 android:id="@+id/cart_txtunit"
@@ -162,6 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
                 android:text="TextView"
+                android:fontFamily="@font/theantiquasun"
                 android:textColor="#040404" />
 
             <TextView
@@ -169,6 +181,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="gm/qty"
+                android:fontFamily="@font/theantiquasun"
                 android:textColor="#040404" />
         </LinearLayout>
 
@@ -192,6 +205,7 @@
                 android:layout_centerVertical="true"
                 android:id="@+id/rs_symbol_dialog"
                 android:text="@string/Rs"
+                android:fontFamily="@font/theantiquasun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -201,6 +215,7 @@
                 android:layout_centerVertical="true"
                 android:id="@+id/price_text_dialog"
                 android:text="20.00"
+                android:fontFamily="@font/theantiquasun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <ImageView
@@ -244,6 +259,7 @@
             android:layout_centerVertical="true"
             android:gravity="center_vertical"
             android:text="ADD"
+            android:fontFamily="@font/theantiquasun"
             android:textSize="15sp"
             android:paddingRight="15dp"
             android:paddingLeft="8dp"
@@ -293,6 +309,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
+            android:fontFamily="@font/theantiquasun"
             android:layout_marginRight="8dp"
             android:textSize="18sp"
             android:text="0" />

@@ -49,6 +49,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:fontFamily="@font/theantiquasun"
+
                 android:text="Ayurvedic"
                 android:textColor="@color/black"
                 android:textSize="18sp" />

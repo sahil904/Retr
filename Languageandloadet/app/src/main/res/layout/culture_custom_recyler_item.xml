@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/new_relative_click"
+    android:paddingBottom="10dp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/culture_item_date"
+            android:layout_marginTop="10dp"
+android:textSize="14sp"
+            android:textColor="#5f7482"
+            android:text="31/01/2019 07:41"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/culture_item_title"
+            android:textSize="17dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#050404"
+            android:layout_marginTop="5dp"
+            android:text="Electoral Alliances Summa vfggfgr "
+            />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="105dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:id="@+id/culture_item_image"
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:background="#d9d9d9"></View>
+</LinearLayout>

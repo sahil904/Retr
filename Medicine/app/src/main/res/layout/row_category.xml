@@ -19,6 +19,7 @@
             android:layout_below="@+id/imageView1"
             android:gravity="center"
             android:text="TextView"
+            android:fontFamily="@font/theantiquasun"
             android:textColor="#000"
             android:textSize="15dp" />
 

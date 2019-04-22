@@ -30,7 +30,8 @@
         android:paddingBottom="10dip"
         android:text="Product Title"
         android:textColor="#040404"
-        android:textSize="15dip"
+		android:fontFamily="@font/theantiquasun"
+		android:textSize="15dip"
         android:textStyle="bold"
         android:typeface="sans" />
 
@@ -58,14 +59,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textColor="#040404" />
+			android:fontFamily="@font/theantiquasun"
+			android:textColor="#040404" />
 
         <TextView
             android:id="@+id/textDiscount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="#040404"
+			android:fontFamily="@font/theantiquasun"
+			android:textColor="#040404"
             android:layout_marginLeft="10dp" />
 <TextView
            
@@ -79,7 +82,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:text="TextView"
+			android:fontFamily="@font/theantiquasun"
+			android:text="TextView"
             android:textColor="#040404" />
 
         <TextView
@@ -87,7 +91,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="gm/qty"
-            android:textColor="#040404" />
+			android:fontFamily="@font/theantiquasun"
+			android:textColor="#040404" />
     </LinearLayout>
 
         	<LinearLayout
@@ -99,14 +104,16 @@
         	        android:layout_width="wrap_content"
         	        android:layout_height="wrap_content"
         	        android:text="Qty:"
-        	        android:textColor="#040404" />
+					android:fontFamily="@font/theantiquasun"
+					android:textColor="#040404" />
 
         	    <TextView
         	        android:id="@+id/textqty"
         	        android:layout_width="wrap_content"
         	        android:layout_height="wrap_content"
         	        android:text="TextView"
-        	        android:textColor="#040404"
+					android:fontFamily="@font/theantiquasun"
+					android:textColor="#040404"
         	        android:textStyle="bold" />
         	</LinearLayout>
 

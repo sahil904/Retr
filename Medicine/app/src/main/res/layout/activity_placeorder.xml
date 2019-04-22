@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:id="@+id/radio0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
                         android:layout_height="wrap_content"
                         android:padding="5dp"
                         android:text="Online"
-                        android:checked="true"
+                        android:checked="false"
                         android:visibility="visible" />
                 </RadioGroup>
 

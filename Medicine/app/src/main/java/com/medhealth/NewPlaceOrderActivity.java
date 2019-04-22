@@ -104,12 +104,12 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         dateTv = findViewById(R.id.date_tv);
         totalAmountTv = findViewById(R.id.total_amount_tv);
-       // cutPrice = findViewById(R.id.);
+        // cutPrice = findViewById(R.id.);
         totalPayableTv = findViewById(R.id.total_payable_tv);
         settings = getSharedPreferences(ConstValue.MAIN_PREF, 0);
 
         //DateFormat dateFormat = DateFormat.getDateTimeInstance() ;
-         date = new Date();
+        date = new Date();
         DateFormat.getDateTimeInstance().format(date);
         Log.d("timeStamp", DateFormat.getDateTimeInstance().format(date));
 
@@ -176,17 +176,30 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!isTimeSelected) {
+              /*  if (!isTimeSelected) {
                     Snackbar.make(v.getRootView(), "Please Select a Delivery Time!!!", Snackbar.LENGTH_SHORT).show();
                 } else if (!isDateSelected) {
                     Snackbar.make(v.getRootView(), "Please Select a Delivery Date!!!", Snackbar.LENGTH_SHORT).show();
-                } else {
+                }*/
+               {
                     radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
+                    int selectedId = radioGroup.getCheckedRadioButtonId();
+                    radioButton = (RadioButton) findViewById(selectedId);
+                    if (selectedId == R.id.radio0) {
+                        for (int k = 0; k < cartList.size(); k++) {
+
+                            Double effected_price = Double.parseDouble(cartList.get(k).salePrice) * Integer.parseInt(cartList.get(k).cartQuantity);
+                            Log.d("EFFECTED_PRICE", String.valueOf(effected_price));
+                        }
+                        showProgressDialog();
+                        hitUrlForPlaceOrder(settings.getString("userid", "00"), String.valueOf(1));
+//                    new PlaceorderActivity.OrderTask().execute(true);
+                    } else {
 //                        Intent intent = new Intent(NewPlaceOrderActivity.this, PaywithPaypal.class);
 //                        startActivity(intent);
                         showProgressDialog();
                         hitUrlForPlaceOrder(settings.getString("userid", "00"), String.valueOf(0));
-
+                    }
                 }
             }
         });
@@ -260,7 +273,7 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
             Log.d("order_item_gmqty[" + String.valueOf(k) + "]", cartList.get(k).gmQty);
             Log.d("order_item_price[" + String.valueOf(k) + "]", String.valueOf(cartList.get(k).salePrice));
             Log.d("order_item_type[" + String.valueOf(k) + "]", cartList.get(k).unit);
-           Log.d("order_discount_id[" + String.valueOf(k) + "]", cartList.get(k).disId);
+            Log.d("order_discount_id[" + String.valueOf(k) + "]", cartList.get(k).disId);
         }
 
         Log.d("mobile", settings.getString("order_phone".toString(), ""));
@@ -404,7 +417,7 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
                         params.put("totalprice", String.valueOf(totalFPrice));
                         params.put("apply_coupon", "1");
                     } else {
-                       // settings.edit().putString("promoPrice", String.valueOf(0)).apply();
+                        // settings.edit().putString("promoPrice", String.valueOf(0)).apply();
                         long totalFPrice = Math.round(Double.parseDouble(MyApplication.getInstance().getTotalPrice())) + Long.parseLong(site_settings.get("Instant Charge"));
                         params.put("totalprice", String.valueOf(totalFPrice));
                         params.put("apply_coupon", "0");
@@ -474,7 +487,7 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-         if(id == android.R.id.home){
+        if(id == android.R.id.home){
             finish();
         }
         return super.onOptionsItemSelected(item);
@@ -506,8 +519,8 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
         }
     }
 
-   private void initializeDialog(){
-         dialog = new ProgressDialog(NewPlaceOrderActivity.this);
+    private void initializeDialog(){
+        dialog = new ProgressDialog(NewPlaceOrderActivity.this);
         dialog.setTitle("Applying Promo Code");
     }
     private void initializemsgDialog(){
@@ -591,7 +604,7 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
                     JSONObject jsonObject = new JSONObject(response);
                     if (jsonObject.getString("responce").equalsIgnoreCase("success")){
                         JSONObject dataObject = jsonObject.getJSONObject("data");
-                         discountPrice = dataObject.getInt("discount");
+                        discountPrice = dataObject.getInt("discount");
 
                         Double price = Double.parseDouble(MyApplication.getInstance().getTotalPrice())-discountPrice;
 
@@ -719,10 +732,4 @@ public class NewPlaceOrderActivity extends AppCompatActivity implements View.OnC
         snackbar.show();
     }
 
-    @Override
-    public void onBackPressed() {
-        Intent intent=new Intent (NewPlaceOrderActivity.this,CheckoutActivity.class);
-        startActivity (intent);
-        super.onBackPressed ();
-    }
 }

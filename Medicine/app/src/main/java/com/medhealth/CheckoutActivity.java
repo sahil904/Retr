@@ -149,15 +149,15 @@ public class CheckoutActivity extends AppCompatActivity {
 				}
 			});
 
-		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+	/*	if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 			// TODO: Consider calling
 			return;
 		}
 		Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
 		String city =locationhere(location.getLatitude(),location.getLongitude());
-		txtAddress.setText(city);
+		txtAddress.setText(city);*/
 	}
-
+/*
 	private String locationhere(double lat,double lon){
 		String cityname="";
 		String sublocality="";
@@ -176,7 +176,7 @@ public class CheckoutActivity extends AppCompatActivity {
 			e.printStackTrace();
 		}
 		return cityname;
-	}
+	}*/
 	class ProfileupdateTask extends AsyncTask<Boolean, Void, String> {
 		String txtphone,txtcity,txtname,txtaddress,txtzipcode,txtemail,txtusername;
 		@Override

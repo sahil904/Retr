@@ -86,19 +86,17 @@ CardView service;
         View view = inflater.inflate(R.layout.fragment_home_new, container, false);
         homeList = new ArrayList<>();
         bannerList = new ArrayList<>();
-        service=view.findViewById(R.id.cardview_service);
-service.setVisibility (View.GONE);
         home_recycler_view = view.findViewById(R.id.home_recycler_view);
         viewPager = view.findViewById(R.id.viewPager);
         tabDots = view.findViewById(R.id.tabDots);
 
-        service.setOnClickListener(new View.OnClickListener() {
+        /*service.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), NewServiceActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
         //hitUrlForGetAName();
         try {
             Interpolator sInterpolator = new Interpolator() {
@@ -139,7 +137,7 @@ service.setVisibility (View.GONE);
             public void run() {
                 handler.post(Update);
             }
-        }, 500, 3000);
+        }, 1000, 3000);
 
         settings = getActivity().getSharedPreferences(ConstValue.MAIN_PREF, 0);
         categoryArray = new ArrayList<>();
@@ -176,7 +174,7 @@ service.setVisibility (View.GONE);
 
         cd = new ConnectionDetector(getActivity());
         if (cd.isConnectingToInternet()) {
-            service.setVisibility (View.VISIBLE);
+          //  service.setVisibility (View.VISIBLE);
 
             noInternetLayout.setVisibility(View.GONE);
             hitUrlForHomeData();
@@ -267,7 +265,7 @@ service.setVisibility (View.GONE);
                                     categoryArray.add(map);
                                 }
                                 if (getActivity()!=null){
-                                    home_recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
+                                    home_recycler_view.setLayoutManager(new GridLayoutManager(getActivity(),2));
                                     homeAdapter = new HomeAdapter(homeList, getActivity());
                                     home_recycler_view.setAdapter(homeAdapter);
                                 }
@@ -299,6 +297,7 @@ service.setVisibility (View.GONE);
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("userId", settings.getString("userid", "00"));
+                Log.d("dshdsf",settings.getString("userid", "00"));
 
 
                 return params;
@@ -427,7 +426,7 @@ service.setVisibility (View.GONE);
 //        }
         @Override
         public int getItemCount() {
-            return 1;
+            return homeSetList.size();
         }
 
 

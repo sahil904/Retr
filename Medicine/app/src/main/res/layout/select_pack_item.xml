@@ -14,6 +14,7 @@
             android:textColor="#000"
             android:id="@+id/rs_dialog"
             android:text="@string/Rs"
+            android:fontFamily="@font/theantiquasun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -21,6 +22,7 @@
             android:textColor="#000"
             android:id="@+id/dialog_price"
             android:text="37.00"
+            android:fontFamily="@font/theantiquasun"
             android:layout_toRightOf="@id/rs_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

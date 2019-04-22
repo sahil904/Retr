@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
 		TextView tvAddress = (TextView) findViewById(R.id.tvAddress);
 
-		LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		/*LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 			// TODO: Consider calling
 			return;
@@ -296,9 +296,9 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 		Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
 		String city =locationhere(location.getLatitude(),location.getLongitude());
 		tvAddress.setText(city);
-
+*/
 	}
-
+/*
 	private String locationhere(double lat,double lon){
 		String cityname="";
 		String sublocality="";
@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 			e.printStackTrace();
 		}
 		return cityname;
-	}
+	}*/
 	@Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);

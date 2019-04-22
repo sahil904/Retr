@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textDiscountFlag"
                         android:layout_marginTop="12dp"
-                        android:fontFamily="@font/adamina"
+                        android:fontFamily="@font/theantiquasun"
                         android:text="Product Title"
                         android:textColor="#040404"
                         android:textSize="15dip" />
@@ -84,6 +84,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="3dp"
                             android:text=""
+                            android:fontFamily="@font/theantiquasun"
                             android:textColor="#040404" />
 
                         <TextView
@@ -99,6 +100,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="TextView"
+                            android:fontFamily="@font/theantiquasun"
                             android:textColor="#040404" />
 
 
@@ -109,6 +111,7 @@
                             android:layout_marginLeft="3dp"
                             android:text="TextView"
                             android:textColor="#040404"
+
                             android:visibility="gone" />
 
                         <TextView
@@ -288,7 +291,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/des_title"
-                    android:fontFamily="@font/amiri"
+                    android:fontFamily="@font/theantiquasun"
                     android:padding="2dp"
                     android:text="asdlkaskl sdaksda dsalkjasd sdakjads asdkdas dsldjsa d asdosad asdooasd oko asdl okdsa op'das"
                     android:textSize="18sp" />

@@ -24,21 +24,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <!--<RadioButton-->
-                        <!--android:visibility="gone"-->
-                        <!--android:id="@+id/radio0"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:checked="true"-->
-                        <!--android:padding="5dp"-->
-                        <!--android:text="@string/txt_cas_delivery" />-->
+                    <RadioButton
+                        android:visibility="visible"
+                        android:id="@+id/radio0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/theantiquasun"
+                        android:padding="5dp"
+                        android:text="@string/txt_cas_delivery" />
 
                     <RadioButton
                         android:id="@+id/service_radio1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:checked="true"
+                        android:fontFamily="@font/theantiquasun"
                         android:text="Online"
                         android:visibility="visible" />
                 </RadioGroup>
@@ -389,8 +390,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:fontFamily="@font/average"
-                    android:text="Visiting Charge"
+                    android:fontFamily="@font/theantiquasun"
+                    android:text="Total Price"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -411,7 +412,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="30dp"
-                    android:fontFamily="@font/average"
+                    android:fontFamily="@font/theantiquasun"
                     android:text="500"
                     android:textColor="@color/orange_color"
                     android:textSize="16sp" />

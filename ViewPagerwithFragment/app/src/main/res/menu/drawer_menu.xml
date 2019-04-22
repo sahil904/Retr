@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    
+    >
+
+    <group android:id="@+id/doubleitem">
+        <item
+            android:id="@+id/search"
+            android:title="Search" />
+        <item
+            android:id="@+id/favorite"
+            android:title="Favorite" />
+    </group>
+
+    <item
+        android:id="@+id/accueil"
+        android:title="Accueil" />
+
+    <item
+        android:id="@+id/affaires"
+        android:title="Affaires" />
+    <item
+        android:id="@+id/video"
+        android:title="Videos" />
+    <item
+        android:id="@+id/photos"
+        android:title="Photos" />
+    <item
+        android:id="@+id/culture"
+        android:title="Culture" />
+    <item
+        android:id="@+id/politique"
+        android:title="Politique" />
+    <item
+        android:id="@+id/sport"
+        android:title="Sport" />
+    <item
+        android:id="@+id/sante"
+        android:title="Sante" />
+    <item
+        android:id="@+id/sciences"
+        android:title="Sciences" />
+
+
+</menu>

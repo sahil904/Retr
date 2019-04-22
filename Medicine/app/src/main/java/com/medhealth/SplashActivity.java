@@ -95,7 +95,7 @@ public class SplashActivity extends AppCompatActivity implements Runnable{
 			startActivity(intent);
 			finish();
 		}else {
-			Intent intent = new Intent(SplashActivity.this, BeforeLoginActivity.class);
+			Intent intent = new Intent(SplashActivity.this, MainActivity.class);
 			startActivity(intent);
 			finish();
 		}

@@ -36,7 +36,7 @@
         android:layout_toRightOf="@+id/thumbnail"
         android:text="Product Title"
         android:textColor="#040404"
-        android:fontFamily="@font/amiri" />
+        android:fontFamily="@font/theantiquasun" />
     <TextView
         android:id="@+id/stock"
         android:layout_width="wrap_content"
@@ -44,6 +44,7 @@
         android:layout_alignParentRight="true"
         android:paddingBottom="10dip"
         android:text="Stock"
+        android:fontFamily="@font/theantiquasun"
         android:visibility="gone"
         android:textColor="#040404"
         android:textSize="12dip"

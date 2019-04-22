@@ -46,7 +46,7 @@
                 android:text="Product Title"
                 android:textColor="#040404"
                 android:textSize="15dip"
-                android:fontFamily="@font/adamina" />
+                android:fontFamily="@font/theantiquasun" />
 
             <TextView
                 android:textColor="@color/orange_color"
@@ -72,7 +72,7 @@
                 android:text="234Rs"
                 android:textColor="@color/orange_color"
                 android:textSize="15sp"
-                android:fontFamily="@font/adamina" />
+                android:fontFamily="@font/theantiquasun" />
 
         </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -205,7 +205,7 @@
             android:text="Update Order"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:fontFamily="@font/adamina"
+            android:fontFamily="@font/theantiquasun"
             android:layout_centerInParent="true"/>
 
 </RelativeLayout>
